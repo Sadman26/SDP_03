@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.app{
+    text-align: center;
+    background-color: gold;
+    box-shadow: 2px 4px 4px gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 1px; 
+}
+.app textarea{
+    font-size: 120;
+    background-color: rgb(207, 207, 247);
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+}
+.app h1{
+    font-family: 'Lobster', cursive;
+}
+    </style>
+    <div class="app">
+            <h1>
+                Welcome
+            </h1>
+            <textarea name="" id="text" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <button onclick="lol()">SAVE</button>
+        
+        <p id="paragraph">      
+        </p>
+    </div>
+<script>
+    let lol=()=>{
+        var x = document.getElementById('text').value;
+        document.getElementById('paragraph').innerHTML="Word Count: "+x.length;
+    }
+</script>
+</body>
+</html>
